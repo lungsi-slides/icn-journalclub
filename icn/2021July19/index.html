@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>ICN Journal Club Presentation by Lungsi (19 July 2021)</title>
+
+	<meta name="description" content="ICN Journal Club Presentation by Lungsi (19 July 2021)">
+	<meta name="author" content="Lungsi Ngwua">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- TOC-Progress plugin -->
+	<link rel="stylesheet" href="plugin/toc-progress/toc-progress.css">
+
+	<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+	<script>
+		if( window.location.search.match( /print-pdf/gi ) ) {
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/pdf.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		}
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+	<div class="slides" style="cursor:url(laser_pointer.png), auto;">
+
+	<section>
+
+		<section data-state="no-toc-progress">
+			<h1 class="no-toc-progress">ICN Journal Club</h1>
+			<h3>Changes in cellular Ca<sup>2+</sup> and Na<sup>+</sup> regulation during the progression towards heart failure in guinea pig</h3>
+			<p>
+                Ke et al. <i>J Physiol</i> 598.7 (2020) pp 1339-1359
+                <a href="https://physoc.onlinelibrary.wiley.com/doi/10.1113/JP277038">10.1113/JP277038</a>
+			</p>
+			<p>
+				<small>Presented by Lungsi, 19 July 2021</small>
+			</p>
+		</section>
+
+	</section>
+
+	<section>
+
+		<section>
+			<h2>About Heart Failure</h2>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">General circulation scheme</h3>
+            <img src="images/circulation_scheme.png" style="max-width: 70%;" />
+		</section>
+
+		<section>
+			<h3>What is heart failure?</h3>
+			<p>"Clinical <strong>syndrome</strong> that develops when the heart cannot maintain adequate output, or can do so only at the expense of elevated ventricular filling pressure." (Ralston et al., 2018)</p>
+		</section>
+
+		<section>
+			<h3 style="margin-bottom: 0;">Heart failure occurs when cardiac output fails to meet the demands of the circulation.</h3>
+			<img src="images/starling_law.png" style="max-width: 70%;" />
+		</section>
+
+		<section>
+			<h3>Ventricular dysfunction: The most common cause of heart failure</h3>
+			<ul>
+			 <li>This can occur as imparied systolic contraction or diastolic dysfunction.</li>
+			 <li>Systolic and diastolic dysfunctions often coexist.</li>
+			 <li>Commonly found in hearts with left ventricular hypertrophy.</li>
+			</ul>
+		</section>
+		
+		<section>
+			<h3 style="margin-bottom: 0;">Left ventricular hypertrophy</h3>
+			<img src="images/left_ventricular_hypertrophy.png" style="max-width: 60%;" />
+		</section>
+
+	</section>
+	
+	<section>
+
+		<section>
+			<h2>Cardiac Electrophysiology</h2>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Atria to Ventricle Conduction</h3>
+			<!-- Fig1 -->
+            <div class="Figs" onclick="enlargeImage('1')">
+            <img id="figure1ToChange"
+            src="images/conduction_cartoon_heart.png" style="max-width: 100%;" />
+            </div>
+            Electrical conduction
+            <span onclick="changeFigure('figure1ToChange', 'images/conduction_cartoon_heart_atria.gif')" style="border-bottom: 1px dotted">
+            starts from the atria</span>. This is followed by the generation of
+            <span onclick="changeFigure('figure1ToChange', 'images/conduction_cartoon_heart_ventricle.gif')" style="border-bottom: 1px dotted">
+            action potential in the ventricles.</span>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Characteristic action potential from ventricular muscles</h3>
+			<!-- Fig2 -->
+            <div class="Figs" onclick="enlargeImage('2')">
+            <img id="figure2ToChange"
+            src="images/ventricle_cell_assembly_muscle_fiber.png" style="max-width: 100%;" />
+            </div>
+            The cardiac ventricular muscle fiber comprise
+            <span onclick="changeFigure('figure2ToChange', 'images/ventricle_cell_assembly_muscle_fiber_expanded_myofibril.png')" style="border-bottom: 1px dotted">many myofibrils</span>. The ion channels of the ventricular muscle cell membrane called the
+            <span onclick="changeFigure('figure2ToChange', 'images/ventricle_cell_assembly_muscle_fiber_expanded_sarcolemma.png')" style="border-bottom: 1px dotted">sarcolemma</span> is responsible for the shape of the action potential.
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Four phases of action potential in ventricular muscle</h3>
+			<!-- Fig3 -->
+            <div class="Figs" onclick="enlargeImage('3')">
+            <img id="figure3ToChange"
+            src="images/ventricle_action_potential_phases_all.png" style="max-width: 100%;" />
+            </div>
+            <small>At resting state
+            <span onclick="changeFigure('figure3ToChange', 'images/ventricle_action_potential_phase_resting.png')" style="border-bottom: 1px dotted">K<sup>+</sup> diffuses out of the cell.</span>
+            The shape of the action potential begin with
+            <span onclick="changeFigure('figure3ToChange', 'images/ventricle_action_potential_phase0.gif')" style="border-bottom: 1px dotted">
+            phase-0 which is due to the opening of fast Na<sup>+</sup> channel resulting in Na<sup>+</sup> influx.</span>
+            The fast Na<sup>+</sup> channel closes and
+            <span onclick="changeFigure('figure3ToChange', 'images/ventricle_action_potential_phase1.gif')" style="border-bottom: 1px dotted">
+            K<sup>+</sup> influx from the opened fast K<sup>+</sup> channel (that began in phase-0) results in phase-1.</span>
+            The fast K<sup>+</sup> channel closes and
+            <span onclick="changeFigure('figure3ToChange', 'images/ventricle_action_potential_phase2.gif')" style="border-bottom: 1px dotted">
+            Ca<sup>2+</sup> influx from the fully open slow Ca<sup>2+</sup> channel (slowly opening during phases-0 &amp; 1) causes phase-2.</span>
+            The slow Ca<sup>2+</sup> channel closes and the
+            <span onclick="changeFigure('figure3ToChange', 'images/ventricle_action_potential_phase3.gif')" style="border-bottom: 1px dotted">
+            outflow of K<sup>+</sup> from the fully open slow K<sup>+</sup> channel (slowly opening during previous phases) causes phase-3.</span>
+            As the slow K<sup>+</sup> channel closes and
+            <span onclick="changeFigure('figure3ToChange', 'images/ventricle_action_potential_phase4.png')" style="border-bottom: 1px dotted">
+            K<sup>+</sup> only diffuses resulting in phase-4 of the action potential.</span></small>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Action potential in ventricular muscle spread into T-tubules</h3>
+			<!-- Fig4 -->
+            <div class="Figs" onclick="enlargeImage('4')">
+            <img id="figure4ToChange"
+            src="images/ventricle_cell_assembly_muscle_fiber_expanded_sarcolemma.png" style="max-width: 100%;" />
+            </div>
+            The spread of ventricular muscle action potential into the
+            <span onclick="changeFigure('figure4ToChange', 'images/ventricle_cell_assembly_muscle_fiber_expanded_sarcolemma_Ttubules.png')" style="border-bottom: 1px dotted">T-tubules</span> triggers a cascade of steps for ventricular muscle contraction and relaxation.
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Action potential in T-tubules triggers Ca<sup>2+</sup> cascade</h3>
+			<!-- Fig5 -->
+            <div class="Figs" onclick="enlargeImage('5')">
+            <img id="figure5ToChange"
+            src="images/cardiac_cell_Ca_rest.png" style="max-width: 60%;" />
+            </div>
+            <small>Purkinje fibers activates
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_ventmuscleAP.png')" style="border-bottom: 1px dotted">
+            action potential from ventricular muscles.</span> The
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_ventmuscleAPvoley.png')" style="border-bottom: 1px dotted">
+            action potential spreads into the T-tubules.</span> This causes
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_LCa_open.png')" style="border-bottom: 1px dotted">
+            opening of L-type Ca channels</span> resulting in
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_LCa_open_CaInflux.png')" style="border-bottom: 1px dotted">
+            Ca<sup>2+</sup> influx.</span> The calcium influx triggers
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_RyR_open.png')" style="border-bottom: 1px dotted">
+            opening of the ryanodine receptor</span> causing
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_RyR_open_CaSpark.png')" style="border-bottom: 1px dotted">
+            Ca<sup>2+</sup> sparks.</span> The increased cytoplasmic Ca<sup>2+</sup> causes
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_RyR_open_CaSpark_musclecontracts.png')" style="border-bottom: 1px dotted">muscle contraction.</span> After the ventricular muscle has contracted the cytoplasmic Ca<sup>2+</sup> is
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_musclerelaxes_SERCAopens.png')" style="border-bottom: 1px dotted">
+            stored via the SERCA</span> and
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_musclerelaxes_NCXopens.png')" style="border-bottom: 1px dotted">
+            extruded via the NCX.</span> The excess Na<sup>+</sup> in the cytoplasm is
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_musclerelaxes_ATPase_controls_SERCA_NCX.png')" style="border-bottom: 1px dotted">expelled by the Na-K-ATPase.</span> Finally, the
+            <span onclick="changeFigure('figure5ToChange', 'images/cardiac_cell_Ca_rest.png')" style="border-bottom: 1px dotted">
+            resting state</span> is attained.
+            </small>
+		</section>
+
+	</section>
+	
+	<section>
+
+		<section>
+			<h3>Authors question</h3>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Facts:</h3>
+			<!-- Fig6 -->
+            <div class="Figs" onclick="enlargeImage('6')">
+            <img id="figure6ToChange"
+            src="images/cardiac_cell_Ca_rest.png" style="max-width: 60%;" />
+            </div>
+            <small><ul>
+            <li>The
+            <span onclick="changeFigure('figure6ToChange', 'images/cardiac_cell_Ca_musclerelaxes_NCXopens.png')" style="border-bottom: 1px dotted">
+            amount of calcium removed from the cytoplasm</span> is equivalent to the the
+            <span onclick="changeFigure('figure6ToChange', 'images/cardiac_cell_Ca_RyR_open_CaSpark.png')" style="border-bottom: 1px dotted">
+            amount entering the cell during early action potential</span> - calcium entering via L-type channel triggering calcium sparks.</li>
+            <li>The calcium entering the cell is coupled with
+            <span onclick="changeFigure('figure6ToChange', 'images/cardiac_cell_Ca_musclerelaxes_ATPase_controls_SERCA_NCX.png')" style="border-bottom: 1px dotted">sodium entering the cell mediated by the Na-K-ATPase.</span></li>
+            <li>Muscle contractility is decreased in hypertrophic heart.</li>
+            </ul></small>
+		</section>
+		
+		<section>
+			<h3>Hypothesis</h3>
+			Increased cytoplasmic concentration of sodium leads to increased cytoplasmic calcium. This mechanism compensates for the reduced contractility of a hypertrophic heart.
+		</section>
+		
+		<section>
+			<h3>The question</h3>
+			What is the function of Na-K-ATPase in a hypertrophic heart?
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Inducing Hypertrophy in Animal heart</h3>
+			<!-- Fig7 -->
+            <div class="Figs" onclick="enlargeImage('7')">
+            <img id="figure7ToChange"
+            src="images/heart_without_TAC.png" style="max-width: 100%;" />
+            </div>
+            <small>By
+            <span onclick="changeFigure('figure7ToChange', 'images/heart_with_TAC.png')" style="border-bottom: 1px dotted">
+            constricting the arch of the aorta</span> the workload on the left ventricle is increased. With the constriction in place the left ventricle muscle eventually becomes
+            <span onclick="changeFigure('figure7ToChange', 'images/heart_with_TAC_hypertrophy.png')" style="border-bottom: 1px dotted">hypertrophied.</span></small>
+		</section>
+    
+    </section>
+    
+    <section>
+
+		<section>
+			<h3>Results part-A</h3>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">in vivo assessment: As ventricular hypertrophy progresses how does it affect the cardiac function?</h3>
+			<!-- Fig8 -->
+            <div class="Figs" onclick="enlargeImage('8')">
+            <img id="figure8ToChange"src="images/Fig1A.png" style="max-width: 100%;" />
+            </div>
+            <small>Precursor of ventricular dysfunction &amp; heart failure: As the hypertrophy
+            <span onclick="changeFigure('figure8ToChange', 'images/Fig1B.png')" style="border-bottom: 1px dotted">progresses</span> the fractional shortening of the left ventricle (FS = ((diastolic internal dimension) &minus; (systolic internal dimension)) &#247; (systolic internal dimension)) becomes
+            <span onclick="changeFigure('figure8ToChange', 'images/Fig1C.png')" style="border-bottom: 1px dotted">smaller</span>. The shortening is
+            <span onclick="changeFigure('figure8ToChange', 'images/Fig1D.png')" style="border-bottom: 1px dotted">significant at 150 days post-AC.</span></small><br />
+            <small><span onclick="changeFigure('figure8ToChange', 'images/table1.png')" style="border-bottom: 1px dotted">Progression of cardiac hypertrophy</span>: The heart-to-body weight ratio
+            <span onclick="changeFigure('figure8ToChange', 'images/table1_HWBW.png')" style="border-bottom: 1px dotted">increases significantly at 60 and 150 days post-AC.</span> Hypertrophy develops around 60 days and maintained thereafter. The lung-to-body weight ratio <span onclick="changeFigure('figure8ToChange', 'images/table1_LWBW.png')" style="border-bottom: 1px dotted">increases significantly at 150 days post-AC.</span> Although, hypertrophy has occurred there is no decrease in heart function between 30 to 60 days post-AC. The heart begins to fail at 150 days post-AC. At 60 days post-AC the hypertrophic heart is considered to be in
+            <span onclick="changeFigure('figure8ToChange', 'images/table1_compensatedstage.png')" style="border-bottom: 1px dotted">compensated stage.</span>
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">As hypertrophy porgresses what does the kinetic of cytoplasmic Ca<sup>2+</sup> look like?</h3>
+			<!-- Fig9 -->
+            <div class="Figs" onclick="enlargeImage('9')">
+            <img id="figure9ToChange"src="images/cardiac_cell_CaTransient_all.png" style="max-width: 100%;" />
+            </div>
+            <small><span onclick="changeFigure('figure9ToChange', 'images/cardiac_cell_CaTransient_all.png')" style="border-bottom: 1px dotted">
+            Ca<sup>2+</sup> transient</span>: Is it different? How is it different? What does it mean?<br />
+            Compared to
+            <span onclick="changeFigure('figure9ToChange', 'images/cardiac_cell_CaTransient_sham.png')" style="border-bottom: 1px dotted">
+            control</span> the amplitude of Ca<sup>2+</sup> at
+            <span onclick="changeFigure('figure9ToChange', 'images/cardiac_cell_CaTransient_60AC.png')" style="border-bottom: 1px dotted">
+            compensated stage is larger</span>. But, as the hypertrophy progresses the
+            <span onclick="changeFigure('figure9ToChange', 'images/cardiac_cell_CaTransient_150AC.png')" style="border-bottom: 1px dotted">
+            amplitude decreases</span>
+            <span onclick="changeFigure('figure9ToChange', 'images/cardiac_cell_CaTransient_significance.png')" style="border-bottom: 1px dotted">
+            significantly.</span> <em>Decrease in amplitude indicates slow removal of cytosol</em> Ca<sup>2+</sup>.
+            </small>
+            
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Are any transporter responsible for the slow removal of cytosol Ca<sup>2+</sup>?</h3>
+			<!-- Fig10 -->
+            <div class="Figs" onclick="enlargeImage('10')">
+            <img id="figure10ToChange"src="images/Fig3AB.png" style="max-width: 60%;" />
+            </div>
+            <small>Looking at the time constants for SERCA, Na-Ca exchanger (NCX) and other miscellaneous transporters. At
+            <span onclick="changeFigure('figure10ToChange', 'images/Fig3AB.png')" style="border-bottom: 1px dotted">
+            compensated stage the time constants remain unchanged.</span> However, as the hypertrophy progresses, at 150 days the
+            <span onclick="changeFigure('figure10ToChange', 'images/Fig3CD.png')" style="border-bottom: 1px dotted">
+            time constant for SERCA makes a significant decline</span> Thus, suggesting reduced rate of
+            <span onclick="changeFigure('figure10ToChange', 'images/cardiac_cell_Ca_musclerelaxes_SERCAopens.png')" style="border-bottom: 1px dotted">
+            removing cytosol Ca<sup>2+</sup> by SERCA.</span> Also, the
+            <span onclick="changeFigure('figure10ToChange', 'images/Fig4AB.png')" style="border-bottom: 1px dotted">Ca<sup>2+</sup> content in the sarcoplasmic reticulum</span>
+            is significantly reduced at 150 days post-AC. The consequence of these two reasons is the rise in cytosol Ca<sup>2+</sup> in severe hypertrophy.
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">What about Ca<sup>2+</sup> sparks?</h3>
+			<!-- Fig11 -->
+            <div class="Figs" onclick="enlargeImage('11')">
+            <img id="figure11ToChange"src="images/cardiac_cell_Ca_RyR_open_CaSpark.png" style="max-width: 60%;" />
+            </div>
+            <small>Ca<sup>2+</sup> sparks
+            <span onclick="changeFigure('figure11ToChange', 'images/cardiac_cell_Ca_RyR_open_CaSpark_musclecontracts.png')" style="border-bottom: 1px dotted">initiate cardiac muscle contraction</span> but it also plays a role in maintaining
+            <span onclick="changeFigure('figure11ToChange', 'images/cardiac_cell_Ca_RyR_open_CaSpark.png')" style="border-bottom: 1px dotted">cytosol Ca<sup>2+</sup> concentration.</span> The spark frequency
+            <span onclick="changeFigure('figure11ToChange', 'images/Fig5AB.png')" style="border-bottom: 1px dotted">increases at 150 AC.</span>
+            This implies increased Ca<sup>2+</sup> SR stores therefore resulting in increased Ca<sup>2+</sup> cytosol. Multiplying the amount of spark frequency by the amount of
+            <span onclick="changeFigure('figure11ToChange', 'images/Fig5EF.png')" style="border-bottom: 1px dotted">spark mass</span> the authors conlcuded <em>increased spark mediated SR leak</em>.
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">What could explain the results seen during compensated stage of hypertrophy?</h3>
+			<!-- Fig12 -->
+            <div class="Figs" onclick="enlargeImage('12')">
+            <img id="figure12ToChange"src="images/table1_compensatedstage_positiveinotrophy.png" style="max-width: 100%;" />
+            </div>
+            <small>The increased
+            <span onclick="changeFigure('figure12ToChange', 'images/table1_compensatedstage_positiveinotrophy.png')" style="border-bottom: 1px dotted">positive inotrophy</span>, the
+            <span onclick="changeFigure('figure12ToChange', 'images/cardiac_cell_CaTransient_all.png')" style="border-bottom: 1px dotted">
+            high Ca<sup>2+</sup> transient amplitude</span> and the
+            <span onclick="changeFigure('figure12ToChange', 'images/Fig4AB.png')" style="border-bottom: 1px dotted">
+            increased sarcoplasmic reticulum Ca<sup>2+</sup> content.</span>
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Authors hypothesis</h3>
+			<!-- Fig13 -->
+            <div class="Figs" onclick="enlargeImage('13')">
+            <img id="figure13ToChange"src="images/cardiac_cell_Ca_musclerelaxes_ATPase_controls_SERCA_NCX.png" style="max-width: 60%;" />
+            </div>
+            <small>
+            A possible explanation for the results at compensated stage could be due to inhibition of the Na-K-ATPase. Inhibiting the pump will cause increased cytoplasmic Na<sup>+</sup>. The consequence of raised cytoplasmic Na<sup>+</sup> concentration is decreased expulsion of cytoplasmic Ca<sup>2+</sup> thus raising the cytoplasmic Ca<sup>2+</sup> content. It will then follow that the SR content of Ca<sup>2+</sup> will rise.
+            </small>
+		</section>
+    
+    </section>
+    
+    <section>
+
+		<section>
+			<h3>Results part-B: Assessing the role of Na-K-ATPase</h3>
+		</section>
+
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">With progressive hypertrophy how does the isoform of the pump affect current through it?</h3>
+			<!-- Fig14 -->
+            <div class="Figs" onclick="enlargeImage('14')">
+            <img id="figure14ToChange"src="images/figure6.png" style="max-width: 70%;" />
+            </div>
+            <small>Inhibiting specific isoform (&alpha;-2) or total inhibition of the Na-K-ATPase protein and measuring the current through it we observe
+            <span onclick="changeFigure('figure14ToChange', 'images/figure6highlighted.png')" style="border-bottom: 1px dotted">
+            no change in current as the hypertrophy progresses.</span>
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">What is the pump activity after reactivation?</h3>
+			<!-- Fig15 -->
+            <div class="Figs" onclick="enlargeImage('15')">
+            <img id="figure15ToChange"src="images/cardiac_cell_Ca_musclerelaxes_ATPase_controls_SERCA_NCX.png" style="max-width: 60%;" />
+            </div>
+            <small>The Na-K-ATPase when active expells 3Na<sup>+</sup> in exchange for 2K<sup>+</sup> inflow. Thus, the net current is 1Na<sup>+</sup> outflow. The pump activity can therefore be described by the
+            <span onclick="changeFigure('figure15ToChange', 'images/Fig7sham.png')" style="border-bottom: 1px dotted">
+            rate of decay of the Na-K-ATPase current.</span> When the cardiac hypertrophy progresses at 150AC the
+            <span onclick="changeFigure('figure15ToChange', 'images/Fig7sham150AC.png')" style="border-bottom: 1px dotted">
+            rate of decay is slower</span>, that is, low rate of expelling cytosol Na<sup>+</sup>. If the
+            <span onclick="changeFigure('figure15ToChange', 'images/Fig7sham_area.png')" style="border-bottom: 1px dotted">
+            area under the curve is a measure of the amount of extruded Na<sup>+</sup></span>, then the
+            <span onclick="changeFigure('figure15ToChange', 'images/Fig7sham150AC_area.png')" style="border-bottom: 1px dotted">
+            area for 150AC is smaller.</span> Hence, the amount of extruded Na<sup>+</sup> is decreased in hypertrophy.<br />
+            What could explain for the decreased Na-K-ATPase current and the decreased Na<sup>+</sup> outflow?
+            </small>
+            
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Is the amount of pump protein decreased during hypertrophy?</h3>
+			<!-- Fig16 -->
+            <div class="Figs" onclick="enlargeImage('16')">
+            <img id="figure16ToChange"src="images/Fig8.png" style="max-width: 70%;" />
+            </div>
+            <small>As the hypertrophy progresses to 150AC the
+            <span onclick="changeFigure('figure16ToChange', 'images/Fig8.png')" style="border-bottom: 1px dotted">
+            fluorescence for &alpha;-1 &amp; &alpha;-2 isoforms are decreased.</span> Furthermore, Western blotting showed
+            <span onclick="changeFigure('figure16ToChange', 'images/Fig9A.png')" style="border-bottom: 1px dotted">
+            lowered levels of &alpha;-1 isoform</span> (but not &alpha;-2 isoform) and
+            <span onclick="changeFigure('figure16ToChange', 'images/Fig9B.png')" style="border-bottom: 1px dotted">
+            lowered levels of the pump regulator phospholemman (PLM)</span> &mdash; the PLM decline is lesser at 150AC.
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Could the 50% reduction in pump current during compensated stage be a mechanism for preserving contractility function?</h3>
+			<!-- Fig17 -->
+            <div class="Figs" onclick="enlargeImage('17')">
+            <img id="figure17ToChange"src="images/Fig6BC.png" style="max-width: 60%;" />
+            </div>
+            <small>
+            When the
+            <span onclick="changeFigure('figure17ToChange', 'images/Fig10A.png')" style="border-bottom: 1px dotted">
+            Na-K-ATPase current is reduced</span> we observe
+            <span onclick="changeFigure('figure17ToChange', 'images/Fig10C.png')" style="border-bottom: 1px dotted">
+            increase in Ca<sup>2+</sup> transient amplitude.</span> The
+            <span onclick="changeFigure('figure17ToChange', 'images/Fig10D.png')" style="border-bottom: 1px dotted">
+            Na<sup>+</sup>/Ca<sup>2+</sup> exchange current is also increased.</span><br />
+            Hypothesis: During compensated stage the
+            <span onclick="changeFigure('figure17ToChange', 'images/cardiac_cell_Ca_musclerelaxes_ATPase_controls_SERCA_NCX.png')" style="border-bottom: 1px dotted">
+            inhibition of Na-K-ATPase current increases SR load (Ca<sup>2+</sup> SR store)</span> and consequently
+            <span onclick="changeFigure('figure17ToChange', 'images/cardiac_cell_Ca_RyR_open_CaSpark.png')" style="border-bottom: 1px dotted">
+            maintains Ca<sup>2+</sup> transient.</span>
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">How does SERCA affect during the compensated stage?</h3>
+			<!-- Fig18 -->
+            <div class="Figs" onclick="enlargeImage('18')">
+            <img id="figure18ToChange"src="images/table1_compensatedstage_positiveinotrophy.png" style="max-width:60%;" />
+            </div>
+            <small>If
+            <span onclick="changeFigure('figure18ToChange', 'images/Fig6BC.png')" style="border-bottom: 1px dotted">50% reduction in Na-K-ATPase current</span> causes
+            <span onclick="changeFigure('figure18ToChange', 'images/Fig11_inhibit_pump.png')" style="border-bottom: 1px dotted">increased Ca<sup>2+</sup> transients</span> leading to
+            <span onclick="changeFigure('figure18ToChange', 'images/table1_compensatedstage_positiveinotrophy.png')" style="border-bottom: 1px dotted">
+            positive inotrophy during compensated stage</span>, what would happen if the
+            <span onclick="changeFigure('figure18ToChange', 'images/cardiac_cell_Ca_musclerelaxes_ATPase_controls_SERCA_NCX.png')" style="border-bottom: 1px dotted">SERCA is partially inhibited?</span> The
+            <span onclick="changeFigure('figure18ToChange', 'images/Fig11_inhibit_pump_and_SERCA.png')" style="border-bottom: 1px dotted">Ca<sup>2+</sup> transient is reduced.</span> Under this condition what if the Na<sup>+</sup> influx is increased? This
+            <span onclick="changeFigure('figure18ToChange', 'images/Fig11_inhibit_pump_and_SERCA_and_NCX.png')" style="border-bottom: 1px dotted">does not augment Ca<sup>2+</sup> transient.</span>
+            </small>
+		</section>
+		
+		<section>
+			<h3 style="font-size: 0.7em; margin-bottom: 0;">Do the action potential change during hypertrophy?</h3>
+			<!-- Fig19 -->
+            <div class="Figs" onclick="enlargeImage('19')">
+            <img id="figure19ToChange"
+            src="images/ventricle_action_potential_phases_all.png" style="max-width: 100%;" />
+            </div>
+            <small>
+            The duration of action potential
+            <span onclick="changeFigure('figure19ToChange', 'images/Fig12.png')" style="border-bottom: 1px dotted">increases as the hypertrophy progresses.</span>
+            It has been suggested that in addition to the fast Na<sup>+</sup> channel there exist another Na<sup>+</sup> influx during action potential called <strong>late</strong> Na<sup>+</sup> <strong>current</strong> that contributes to the duration of phase-2 plateau of the action potential. When the late Na<sup>+</sup> current is inhibited, the duration of action potential of a hypertrophic heart is
+            <span onclick="changeFigure('figure19ToChange', 'images/Fig13_150AC.png')" style="border-bottom: 1px dotted">shortened.</span>
+            As the hypertrophy progresses the late Na<sup>+</sup> current
+            <span onclick="changeFigure('figure19ToChange', 'images/Fig13_lateNa.png')" style="border-bottom: 1px dotted">increases.</span>
+            This supports the suggestion that in a failing heart the <em>density of late Na<sup>+</sup> current increases and/or its inactivation kinetics is slowed.</em>
+            </small>
+		</section>
+    
+    </section>
+
+
+	<section>
+		<h2>Refs</h2>
+		<small><ul>
+			<li>Figure for "General Circulation Scheme" from Myers, A. K., &amp; Mulroney, S. E. (2016). Netter's Essential Physiology (2nd ed.). Elsevier.</li>
+			<li>Figure for "Left ventricular hypertrophy" from Stewart, B., &amp; Cooke, R. A. (2004). Colour Atlas of Anatomical Pathology (3rd ed.). Churchill Livingstone.</li>
+			<li>Figures for "Cardiac Electrophysiology" from Hall, M. E., &amp; John, E. (2021). Guyton and Hall Textbook of Medical Physiology (14th ed.). Elsevier AND Ralston, S. H., Penman, I. D., Strachan, M. W. J., & Hobson, R. P. (Eds.). (2018). Heart Failure. In Davidson’s Principles and Practice of Medicine (23rd ed., pp. 461–468). Elsevier.</li>
+		</ul></small>
+	</section>
+
+	</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	
+	<script type="text/javascript" src="plugin/neuralgraphs/interact.js"></script>
+
+	<script>
+
+		// Full list of configuration options available here:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+			// Parallax scrolling
+			// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+			// parallaxBackgroundSize: '2100px 900px',
+
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+
+				// TOC-Progress plugin
+				{ src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } }
+			]
+		});
+
+	</script>
+	
+
+</body>
+
+</html>
